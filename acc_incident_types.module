@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Access Incident Types feature.
+ */
+
+include_once 'acc_incident_types.features.inc';
