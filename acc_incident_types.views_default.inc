@@ -59,7 +59,6 @@ function acc_incident_types_views_default_views() {
     87 => '87',
     90 => '90',
     92 => '92',
-    94 => '94',
     95 => '95',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['group'] = 1;
