@@ -9,9 +9,9 @@
  */
 function acc_incident_types_taxonomy_default_vocabularies() {
   return array(
-    'incident_type' => array(
-      'name' => 'Incident type',
-      'machine_name' => 'incident_type',
+    'acc_incident_types' => array(
+      'name' => 'Access Incident types',
+      'machine_name' => 'acc_incident_types',
       'description' => '',
       'hierarchy' => 0,
       'module' => 'taxonomy',

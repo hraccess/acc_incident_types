@@ -48,7 +48,7 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'incident_type' => 'incident_type',
+    'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
   /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
@@ -167,7 +167,7 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'incident_type' => 'incident_type',
+    'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
   /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
@@ -202,7 +202,7 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'incident_type' => 'incident_type',
+    'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
   /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */

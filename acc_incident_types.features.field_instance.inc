@@ -10,9 +10,9 @@
 function acc_incident_types_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-incident_type-field_access_constraint'
-  $field_instances['taxonomy_term-incident_type-field_access_constraint'] = array(
-    'bundle' => 'incident_type',
+  // Exported field_instance: 'taxonomy_term-acc_incident_types-field_access_constraint'
+  $field_instances['taxonomy_term-acc_incident_types-field_access_constraint'] = array(
+    'bundle' => 'acc_incident_types',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
