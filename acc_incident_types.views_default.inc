@@ -11,7 +11,7 @@ function acc_incident_types_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'incident_types_for_access_incident';
+  $view->name = 'acc_incident_types';
   $view->description = '';
   $view->tag = 'Access';
   $view->base_table = 'taxonomy_term_data';
@@ -214,7 +214,7 @@ function acc_incident_types_views_default_views() {
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'access_constraints';
-  $translatables['incident_types_for_access_incident'] = array(
+  $translatables['acc_incident_types'] = array(
     t('Master'),
     t('Responsible Actor'),
     t('more'),
@@ -236,7 +236,7 @@ function acc_incident_types_views_default_views() {
     t('Incident types for Impediment on entry into the country'),
     t('Incident types for Restriction on movement within the country'),
   );
-  $export['incident_types_for_access_incident'] = $view;
+  $export['acc_incident_types'] = $view;
 
   return $export;
 }
