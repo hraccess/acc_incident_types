@@ -36,7 +36,7 @@ function acc_incident_types_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'incident_type',
+        'vocabulary' => 'acc_incident_type',
         'mappings' => array(
           0 => array(
             'source' => 'Name:en',
@@ -62,7 +62,7 @@ function acc_incident_types_feeds_importer_default() {
         'update_existing' => '0',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
-        'bundle' => 'incident_type',
+        'bundle' => 'acc_incident_type',
       ),
     ),
     'content_type' => '',
