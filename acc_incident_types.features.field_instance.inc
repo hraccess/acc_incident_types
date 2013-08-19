@@ -10,8 +10,8 @@
 function acc_incident_types_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'taxonomy_term-acc_incident_types-field_access_constraints'
-  $field_instances['taxonomy_term-acc_incident_types-field_access_constraints'] = array(
+  // Exported field_instance: 'taxonomy_term-acc_incident_types-field_access_constraint'
+  $field_instances['taxonomy_term-acc_incident_types-field_access_constraint'] = array(
     'bundle' => 'acc_incident_types',
     'default_value' => NULL,
     'deleted' => 0,
@@ -38,7 +38,7 @@ function acc_incident_types_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_access_constraints',
+    'field_name' => 'field_access_constraint',
     'label' => 'Access Constraint',
     'required' => 0,
     'settings' => array(
