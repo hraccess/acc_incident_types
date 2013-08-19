@@ -62,7 +62,7 @@ function acc_incident_types_feeds_importer_default() {
         'update_existing' => '0',
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
-        'bundle' => 'acc_incident_type',
+        'bundle' => 'acc_incident_types',
       ),
     ),
     'content_type' => '',
