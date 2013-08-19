@@ -63,7 +63,7 @@ function acc_incident_types_views_default_views() {
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'access_constraints';
+  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
   /* Filter criterion: Taxonomy term: Name */
   $handler->display->display_options['filters']['name']['id'] = 'name';
   $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
@@ -178,7 +178,7 @@ function acc_incident_types_views_default_views() {
     89 => '89',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'access_constraints';
+  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
 
   /* Display: Incident types for Restriction on movement within the country */
   $handler = $view->new_display('entityreference', 'Incident types for Restriction on movement within the country', 'entityreference_3');
@@ -213,7 +213,7 @@ function acc_incident_types_views_default_views() {
     94 => '94',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'access_constraints';
+  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
   $translatables['acc_incident_types'] = array(
     t('Master'),
     t('Responsible Actor'),
