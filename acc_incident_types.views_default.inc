@@ -55,11 +55,10 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['filters']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
+  $handler->display->display_options['filters']['field_access_constraint_tid']['operator'] = 'not';
   $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    87 => '87',
-    90 => '90',
-    92 => '92',
-    95 => '95',
+    493 => '493',
+    498 => '498',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
@@ -175,7 +174,7 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    89 => '89',
+    493 => '493',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
@@ -210,7 +209,7 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    94 => '94',
+    498 => '498',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
