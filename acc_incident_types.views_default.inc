@@ -31,7 +31,7 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Field: Access Constraint (field_access_constraint) */
+  /* Relationship: Taxonomy term: Access Constraint (field_access_constraint) */
   $handler->display->display_options['relationships']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
   $handler->display->display_options['relationships']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['relationships']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
@@ -51,14 +51,14 @@ function acc_incident_types_views_default_views() {
     'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
-  /* Filter criterion: Field: Access Constraint (field_access_constraint) */
+  /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
   $handler->display->display_options['filters']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['operator'] = 'not';
   $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    493 => '493',
-    498 => '498',
+    233 => '233',
+    238 => '238',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['group'] = 1;
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
@@ -169,12 +169,12 @@ function acc_incident_types_views_default_views() {
     'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
-  /* Filter criterion: Field: Access Constraint (field_access_constraint) */
+  /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
   $handler->display->display_options['filters']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    493 => '493',
+    233 => '233',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
@@ -204,12 +204,12 @@ function acc_incident_types_views_default_views() {
     'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
-  /* Filter criterion: Field: Access Constraint (field_access_constraint) */
+  /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
   $handler->display->display_options['filters']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
   $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    498 => '498',
+    238 => '238',
   );
   $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
