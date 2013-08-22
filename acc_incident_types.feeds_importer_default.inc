@@ -36,7 +36,7 @@ function acc_incident_types_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'acc_incident_type',
+        'vocabulary' => 'acc_incident_types',
         'mappings' => array(
           0 => array(
             'source' => 'Name:en',
