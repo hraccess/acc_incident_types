@@ -31,7 +31,7 @@ function acc_incident_types_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Taxonomy term: Access Constraint (field_access_constraint) */
+  /* Relationship: Field: Access Constraint (field_access_constraint) */
   $handler->display->display_options['relationships']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
   $handler->display->display_options['relationships']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
   $handler->display->display_options['relationships']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
@@ -51,74 +51,22 @@ function acc_incident_types_views_default_views() {
     'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
-  $handler->display->display_options['filters']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['operator'] = 'not';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    452 => '452',
-    457 => '457',
-  );
-  $handler->display->display_options['filters']['field_access_constraint_tid']['group'] = 1;
-  $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name']['id'] = 'name';
-  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name']['field'] = 'name';
-  $handler->display->display_options['filters']['name']['operator'] = '!=';
-  $handler->display->display_options['filters']['name']['value'] = 'Mine field identified by Mine Action Authority';
-  $handler->display->display_options['filters']['name']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_1']['id'] = 'name_1';
-  $handler->display->display_options['filters']['name_1']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_1']['field'] = 'name';
-  $handler->display->display_options['filters']['name_1']['operator'] = '!=';
-  $handler->display->display_options['filters']['name_1']['value'] = 'Mine presence reported by community but not demarcated';
-  $handler->display->display_options['filters']['name_1']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_2']['id'] = 'name_2';
-  $handler->display->display_options['filters']['name_2']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_2']['field'] = 'name';
-  $handler->display->display_options['filters']['name_2']['operator'] = '!=';
-  $handler->display->display_options['filters']['name_2']['value'] = 'Travel permit (staff)';
-  $handler->display->display_options['filters']['name_2']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_3']['id'] = 'name_3';
-  $handler->display->display_options['filters']['name_3']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_3']['field'] = 'name';
-  $handler->display->display_options['filters']['name_3']['operator'] = '!=';
-  $handler->display->display_options['filters']['name_3']['value'] = 'Travel permit (transport of goods)';
-  $handler->display->display_options['filters']['name_3']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_4']['id'] = 'name_4';
-  $handler->display->display_options['filters']['name_4']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_4']['field'] = 'name';
-  $handler->display->display_options['filters']['name_4']['operator'] = '!=';
-  $handler->display->display_options['filters']['name_4']['value'] = 'New project implementation permit';
-  $handler->display->display_options['filters']['name_4']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_5']['id'] = 'name_5';
-  $handler->display->display_options['filters']['name_5']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_5']['field'] = 'name';
-  $handler->display->display_options['filters']['name_5']['operator'] = '!=';
-  $handler->display->display_options['filters']['name_5']['value'] = 'Renewal of project implementation permit';
-  $handler->display->display_options['filters']['name_5']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_6']['id'] = 'name_6';
-  $handler->display->display_options['filters']['name_6']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_6']['field'] = 'name';
-  $handler->display->display_options['filters']['name_6']['operator'] = '!=';
-  $handler->display->display_options['filters']['name_6']['value'] = 'Memorandum of understanding';
-  $handler->display->display_options['filters']['name_6']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_7']['id'] = 'name_7';
-  $handler->display->display_options['filters']['name_7']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_7']['field'] = 'name';
-  $handler->display->display_options['filters']['name_7']['operator'] = '!=';
-  $handler->display->display_options['filters']['name_7']['value'] = 'Technical agreement';
-  $handler->display->display_options['filters']['name_7']['group'] = 1;
+  /* Filter criterion: Taxonomy term: Taxonomy term UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'field_access_constraint_tid';
+  $handler->display->display_options['filters']['uuid']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid']['value'] = 'dbefb18c-9a7e-4255-b326-5a9635734565';
+  $handler->display->display_options['filters']['uuid']['group'] = 1;
+  /* Filter criterion: Taxonomy term: Taxonomy term UUID */
+  $handler->display->display_options['filters']['uuid_1']['id'] = 'uuid_1';
+  $handler->display->display_options['filters']['uuid_1']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid_1']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid_1']['relationship'] = 'field_access_constraint_tid';
+  $handler->display->display_options['filters']['uuid_1']['operator'] = '!=';
+  $handler->display->display_options['filters']['uuid_1']['value'] = '3eeac01f-1ff7-4e40-a15e-10c352d3770b';
+  $handler->display->display_options['filters']['uuid_1']['group'] = 1;
 
   /* Display: Incident Types (Access incident) */
   $handler = $view->new_display('entityreference', 'Incident Types (Access incident)', 'entityreference_1');
@@ -169,15 +117,12 @@ function acc_incident_types_views_default_views() {
     'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
-  $handler->display->display_options['filters']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    452 => '452',
-  );
-  $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
+  /* Filter criterion: Taxonomy term: Taxonomy term UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'field_access_constraint_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = 'dbefb18c-9a7e-4255-b326-5a9635734565';
 
   /* Display: Incident types for Restriction on movement within the country */
   $handler = $view->new_display('entityreference', 'Incident types for Restriction on movement within the country', 'entityreference_3');
@@ -204,15 +149,12 @@ function acc_incident_types_views_default_views() {
     'acc_incident_types' => 'acc_incident_types',
   );
   $handler->display->display_options['filters']['machine_name']['group'] = 1;
-  /* Filter criterion: Taxonomy term: Access Constraint (field_access_constraint) */
-  $handler->display->display_options['filters']['field_access_constraint_tid']['id'] = 'field_access_constraint_tid';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['table'] = 'field_data_field_access_constraint';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['field'] = 'field_access_constraint_tid';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['value'] = array(
-    457 => '457',
-  );
-  $handler->display->display_options['filters']['field_access_constraint_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_access_constraint_tid']['vocabulary'] = 'acc_access_constraints';
+  /* Filter criterion: Taxonomy term: Taxonomy term UUID */
+  $handler->display->display_options['filters']['uuid']['id'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['uuid']['field'] = 'uuid';
+  $handler->display->display_options['filters']['uuid']['relationship'] = 'field_access_constraint_tid';
+  $handler->display->display_options['filters']['uuid']['value'] = '3eeac01f-1ff7-4e40-a15e-10c352d3770b';
   $translatables['acc_incident_types'] = array(
     t('Master'),
     t('Responsible Actor'),
