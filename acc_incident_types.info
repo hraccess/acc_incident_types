@@ -3,6 +3,7 @@ description = Provides the Access Incident Type Taxanomy
 core = 7.x
 package = Humanitarian Access
 version = 7.x-1.0
+project = acc_incident_types
 dependencies[] = acc_constraints
 dependencies[] = entityreference
 dependencies[] = feeds
